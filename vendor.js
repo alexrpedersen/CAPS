@@ -7,6 +7,11 @@ events.on('delivered', () => {
     console.log('Delivered');
 });
 
+// socket.connect({
+//     port:3000,
+//     host: 'localhost'
+// }, () => {});
+
 
 setInterval(() => {
     let payload = {
