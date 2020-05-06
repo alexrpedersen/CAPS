@@ -22,9 +22,7 @@ let payload = {
 };
 
 socket.on('data', (buffer) => {
-  // console.log('got a buffer', buffer)
   const jsonString = buffer.toString()
-  // console.log('made it a string', jsonString)
   const data = JSON.parse(jsonString)
 
   if (data.event === 'pickUp') {
